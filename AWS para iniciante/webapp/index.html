@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.png"
+    />
+    <title>Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/fullcalendar.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/dataTables.bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap-datetimepicker.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/plugins/morris/morris.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <div class="header">
+        <div class="header-left">
+          <!--
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" width="120" height="50" alt="" />
+          </a>
+        -->
+        </div>
+        <div class="page-title-box pull-left">
+          <h3>Dashboard</h3>
+        </div>
+        <a id="mobile_btn" class="mobile_btn pull-left" href="#sidebar"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+          <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+              <li class="menu-title">Main</li>
+              <li class="active">
+                <a href="index.html"
+                  ><i class="fa fa-dashboard"></i> Dashboard</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <div class="content container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-3">
+              <div class="dash-widget dash-widget5">
+                <span class="dash-widget-icon bg-success"
+                  ><i class="fa fa-money" aria-hidden="true"></i
+                ></span>
+                <div class="dash-widget-info">
+                  <h3>$998</h3>
+                  <span>Revenue</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-3">
+              <div class="dash-widget dash-widget5">
+                <span class="dash-widget-icon bg-info"
+                  ><i class="fa fa-user-o" aria-hidden="true"></i
+                ></span>
+                <div class="dash-widget-info">
+                  <h3>1072</h3>
+                  <span>Users</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-3">
+              <div class="dash-widget dash-widget5">
+                <span class="dash-widget-icon bg-warning"
+                  ><i class="fa fa-files-o"></i
+                ></span>
+                <div class="dash-widget-info">
+                  <h3>72</h3>
+                  <span>Projects</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-3">
+              <div class="dash-widget dash-widget5">
+                <span class="dash-widget-icon bg-danger"
+                  ><i class="fa fa-tasks" aria-hidden="true"></i
+                ></span>
+                <div class="dash-widget-info">
+                  <h3>618</h3>
+                  <span>Tasks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card-box">
+                <div id="bar-example"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <div class="panel">
+                <div class="panel-heading text-center">
+                  <h3 class="panel-title">Project Status</h3>
+                </div>
+                <div class="panel-body">
+                  <div id="donutChart" class="rad-chart"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <div class="panel">
+                <div class="panel-heading text-center">
+                  <h3 class="panel-title">Product Status</h3>
+                </div>
+                <div class="panel-body">
+                  <div id="areaChart" class="rad-chart"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-xs-12">
+              <div class="panel">
+                <div class="panel-heading text-center">
+                  <h3 class="panel-title">Task Status</h3>
+                </div>
+                <div class="panel-body">
+                  <div id="area-chart" class="rad-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.slimscroll.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/moment.min.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/bootstrap-datetimepicker.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/morris/morris.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/raphael/raphael-min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+  </body>
+</html>
