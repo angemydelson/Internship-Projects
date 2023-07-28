@@ -1,0 +1,12 @@
+1. Crie um bucket com o versionamento ativo
+2. Habilite o MFA na conta root através do IAM
+3. Copie o ARN referente ao seu MFA
+4. Gere uma Access Key e Secret Access Key para conta root (MUITO CUIDADO COM ISSO)
+5. Configure o AWS CLI
+6. Execute a linha de comando abaixo para poder habilitar o MFA Delete:
+
+Enable: aws s3api put-bucket-versioning --bucket BUCKET_NAME --versioning-configuration Status=Enabled,MFADelete=Enabled --mfa "ARN_MFA CODE_MFA_DEVICE" --profile root
+
+7. Para desabilitar, execute a linha de comando:
+
+Disable: aws s3api put-bucket-versioning --bucket BUCKET_NAME --versioning-configuration Status=Enabled,MFADelete=Disable --mfa "ARN_MFA CODE_MFA_DEVICE" --profile root
