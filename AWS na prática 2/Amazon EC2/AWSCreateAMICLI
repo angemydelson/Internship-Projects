@@ -1,0 +1,3 @@
+# Create AMI
+
+aws ec2 create-image --instance-id i-0c6b1ca827198a44a --name "MinhaPrimeiraAMICLI" --description "AMI criada via AWS CLI" --no-reboot
