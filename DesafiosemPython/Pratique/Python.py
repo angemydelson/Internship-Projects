@@ -160,80 +160,70 @@
 
 # print('Mais codigo abaixo')
 
+# frutas = ["maçã", "morango", "uva"]
+# for i in frutas:
+#     print(f"Eu gosto de {i}")
+# for i in range(1,11):
+#     print(i)
 
-# classe em pyhton
+# frutas = ["maçã", "morango", "uva", "maçã", "maçã"]
+# cont = 0
+# for i in frutas:
+#     if (i == 'maçã'):
+#         cont += 1
+# print(cont)
 
-# class Funcionarios:
-#     nome = "Angemy"
-#     sobrenome = "Delson"
+# carro = ["BMW X6", "BMW I5", "BMW I8"]
+# inputUser = str(input("Digite o nome do carro: "))
+# inputUser = inputUser.lower()
+# aux = 0
+# for i in carro:
+#     if i.lower() == inputUser:
+#         aux = 1
+# if aux == 1:
+#     print("Este carro está disponível")
+# else :
+#     print("Este carro não está dispnivel. Infelizmente!")
 
+# carro = ("BMW X6", "BMW I5", "BMW I8")
+# i = input()
+# if i.upper in carro:
+#     print('sim')
+# else :
+#     print('Não')
 
-# usuario1 = Funcionarios()
-# print(usuario1.nome)
-# print(usuario1.sobrenome)
+# carro = {
+#     'Brasil' : 'Brasilia',
+#     'Haiti' : 'Porto Principe',
+#     'Peru' : 'Lima',
+#     'Canada' : 'Ottawa'
+# }
 
-# class Funcionarios:
-#    pass
+# pais = str(input("Digite uma pais: "))
 
+# if pais in carro:
+#     print(carro[pais])
 
+# n = int(input())
 
-# usuario1 = Funcionarios()
-# usuario2 = Funcionarios()
+# def fatorial(n):
+#     if n == 1 or n == 0:
+#         return 1
+#     else:
+#         return n * fatorial(n-1)
 
-# usuario1.nome = 'Angemy'
-# usuario1.datansc = 'Delson'
-# usuario2.nome = 'Delva'
-# usuario2.datanas = 'Saint bert'
-# print(usuario1.nome)
-# print(usuario1.datansc)
+# print(fatorial(n))
+# import math
+# x = int(input())
+# cubo = lambda x: pow(x,3) 
+# print(cubo(x))
 
-# class Funcionarios:
-#     def __init__(self, nome, sobrenome, datanasc):
-#       self.nome = nome
-#       self.sobrenome = sobrenome
-#       self.datanasc = datanasc
-
-#     def nome_completo(self):
-#       return self.nome + " " + self.sobrenome
-
-
-# usuario1 = Funcionarios("Angemy", "Saint Bert", "10/11/2000")
-# usuario2 = Funcionarios("Delva", "Saint Bert", "10/23/1972")
-
-
-
-# # print(usuario1.nome)
-# # print(usuario2.nome)
-
-# print(usuario1.nome_completo())
-# print(Funcionarios.nome_completo(usuario1))
-
-# from datetime import datetime
-# class Funcionarios:
-#     def __init__(self, nome, sobrenome, anonasc):
-#       self.nome = nome
-#       self.sobrenome = sobrenome
-#       self.anonasc = anonasc
-
-#     def nome_completo(self):
-#       return self.nome + " " + self.sobrenome
-    
-#     def idade_funcionario(self):
-#        ano_atual = datetime.now().year
-#        self.anonasc = int(ano_atual - self.anonasc)
-#        return self.anonasc
-       
-
-
-# usuario1 = Funcionarios("Angemy", "Saint Bert", 2000)
-# usuario2 = Funcionarios("Delva", "Saint Bert", 1972)
-
-
-
-# # print(usuario1.nome)
-# # print(usuario2.nome)
-
-# print(usuario1.nome_completo())
-# print(Funcionarios.nome_completo(usuario1))
-# print(Funcionarios.idade_funcionario(usuario1))
+# doinum = lambda x, y: x * y
+# x = int(input())
+# y = int(input())
+# print(doinum(x,y))
+# num = [1, 2, 3, 4, 5, 56]
+# resultado = []
+# quadrado = lambda x: x**2
+# x = int(input())
 
