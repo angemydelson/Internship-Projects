@@ -125,14 +125,115 @@
 # frutas2 = [iten for iten in frutas1 if 'n' in iten]
 # print(frutas2)
 
-from sys import getsizeof
+# from sys import getsizeof
 
-valores = [ x * 10 for x in range(10)]
-print(type(valores))
-print(valores)
-print(getsizeof(valores))
+# valores = [ x * 10 for x in range(10)]
+# print(type(valores))
+# print(valores)
+# print(getsizeof(valores))
 
-valores = ( x * 10 for x in range(10))
-print(type(valores))
-print(list(valores))
-print(getsizeof(valores))
+# valores = ( x * 10 for x in range(10))
+# print(type(valores))
+# print(list(valores))
+# print(getsizeof(valores))
+
+# Erros
+
+# try:
+#     letras = ['a', 'b', 'c']
+#     print(letras[3])
+# except IndexError:
+#     print('Index não existe')
+
+# try:
+#     Valor = int(input("Digite um valor: "))
+#     print(Valor)
+# except ValueError:
+#     print('Favor digitar um valor em numero')
+# finally:
+#     print('Pedaço de codigo ok')
+
+# else:
+#     print('Valor Correto')
+#     resul = Valor *231412
+#     print(resul)
+
+# print('Mais codigo abaixo')
+
+
+# classe em pyhton
+
+# class Funcionarios:
+#     nome = "Angemy"
+#     sobrenome = "Delson"
+
+
+# usuario1 = Funcionarios()
+# print(usuario1.nome)
+# print(usuario1.sobrenome)
+
+# class Funcionarios:
+#    pass
+
+
+
+# usuario1 = Funcionarios()
+# usuario2 = Funcionarios()
+
+# usuario1.nome = 'Angemy'
+# usuario1.datansc = 'Delson'
+# usuario2.nome = 'Delva'
+# usuario2.datanas = 'Saint bert'
+# print(usuario1.nome)
+# print(usuario1.datansc)
+
+# class Funcionarios:
+#     def __init__(self, nome, sobrenome, datanasc):
+#       self.nome = nome
+#       self.sobrenome = sobrenome
+#       self.datanasc = datanasc
+
+#     def nome_completo(self):
+#       return self.nome + " " + self.sobrenome
+
+
+# usuario1 = Funcionarios("Angemy", "Saint Bert", "10/11/2000")
+# usuario2 = Funcionarios("Delva", "Saint Bert", "10/23/1972")
+
+
+
+# # print(usuario1.nome)
+# # print(usuario2.nome)
+
+# print(usuario1.nome_completo())
+# print(Funcionarios.nome_completo(usuario1))
+
+# from datetime import datetime
+# class Funcionarios:
+#     def __init__(self, nome, sobrenome, anonasc):
+#       self.nome = nome
+#       self.sobrenome = sobrenome
+#       self.anonasc = anonasc
+
+#     def nome_completo(self):
+#       return self.nome + " " + self.sobrenome
+    
+#     def idade_funcionario(self):
+#        ano_atual = datetime.now().year
+#        self.anonasc = int(ano_atual - self.anonasc)
+#        return self.anonasc
+       
+
+
+# usuario1 = Funcionarios("Angemy", "Saint Bert", 2000)
+# usuario2 = Funcionarios("Delva", "Saint Bert", 1972)
+
+
+
+# # print(usuario1.nome)
+# # print(usuario2.nome)
+
+# print(usuario1.nome_completo())
+# print(Funcionarios.nome_completo(usuario1))
+# print(Funcionarios.idade_funcionario(usuario1))
+
