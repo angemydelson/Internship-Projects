@@ -24,3 +24,5 @@ def setepFunction(soma):
     return 0
 
 r = setepFunction(s)
+
+print("teste")
