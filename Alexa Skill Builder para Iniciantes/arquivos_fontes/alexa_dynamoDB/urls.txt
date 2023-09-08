@@ -1,0 +1,6 @@
+
+https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html
+
+https://docs.aws.amazon.com/pt_br/AWSJavaScriptSDK/latest/_index.html
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html

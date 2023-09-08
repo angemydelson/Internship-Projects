@@ -1,0 +1,77 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "campeonato brasileiro",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CampeaoIntent",
+          "slots": [
+            {
+              "name": "anoCampeonato",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "samples": [
+                "{anoCampeonato}"
+              ]
+            }
+          ],
+          "samples": [
+            "No ano de {anoCampeonato} quem foi o campeão",
+            "qual o campeão brasileiro em {anoCampeonato}",
+            "qual o campeão em {anoCampeonato}",
+            "quem foi o campeão brasileiro em {anoCampeonato}"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CampeaoIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "anoCampeonato",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.46570600107.409299520962"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.46570600107.409299520962",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Em qual ano você quer saber o campeão ?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "3"
+}
